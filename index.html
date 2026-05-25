@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>BM COFFEE | Premium Roastery & Cafe</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/011/604/054/non_2x/mh-logo-mh-design-blue-and-red-mh-letter-mh-letter-logo-design-initial-letter-mh-linked-circle-uppercase-monogram-logo-vector.jpg" type="image/png">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+    
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo-small">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <span class="logo-text">BM COFFEE</span>
+            </div>
+            <button id="closeSidebarBtn" class="close-btn">&times;</button>
+        </div>
+        <div class="sidebar-menu">
+            <a href="#" class="sidebar-link">Home</a>
+            
+            <div class="mobile-dropdown-item">
+                <div class="mobile-dropdown-btn" data-target="mobileCoffeeSub">
+                    <span>Coffee</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu" id="mobileCoffeeSub">
+                    <a href="#"><i class="fa-solid fa-mug-hot"></i> Hot Coffee</a>
+                    <a href="#"><i class="fa-solid fa-whiskey-glass"></i> Iced Coffee</a>
+                    <a href="#"><i class="fa-solid fa-blender"></i> Frappé</a>
+                    <a href="#"><i class="fa-solid fa-seedling"></i> Special Brew</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown-item">
+                <div class="mobile-dropdown-btn" data-target="mobileDrinksSub">
+                    <span>Soft Drinks</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu" id="mobileDrinksSub">
+                    <a href="#"><i class="fa-solid fa-bottle-water"></i> Energy Drinks</a>
+                    <a href="#"><i class="fa-solid fa-glass-water"></i> Italian Soda</a>
+                    <a href="#"><i class="fa-solid fa-lemon"></i> Fresh Juice</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown-item">
+                <div class="mobile-dropdown-btn" data-target="mobileServiceSub">
+                    <span>Our Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu" id="mobileServiceSub">
+                    <a href="#"><i class="fa-solid fa-truck"></i> Delivery Service</a>
+                    <a href="#"><i class="fa-solid fa-cake-candles"></i> Event Catering</a>
+                    <a href="#"><i class="fa-solid fa-shop"></i> Wholesale Beans</a>
+                </div>
+            </div>
+            
+            <a href="#" class="sidebar-link">About Us</a>
+            <a href="#" class="sidebar-link">Contact</a>
+        </div>
+        <div class="sidebar-social">
+            <a href="https://www.facebook.com/share/18ThZoUiv8/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://t.me/mengheang32001" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <img src="logo2/1.png" alt="BM Coffee Logo" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=BM'">
+                </div>
+                <span class="logo-brand">BM<span>COFFEE</span></span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-menu">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown-btn">Coffee <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="dropdown-menu">
+                            <a href="#"><i class="fa-solid fa-mug-hot"></i> Hot Coffee</a>
+                            <a href="#"><i class="fa-solid fa-whiskey-glass"></i> Iced Coffee</a>
+                            <a href="#"><i class="fa-solid fa-blender"></i> Frappé</a>
+                            <a href="#"><i class="fa-solid fa-seedling"></i> Special Brew</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-btn">Soft Drinks <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="dropdown-menu">
+                            <a href="#"><i class="fa-solid fa-bottle-water"></i> Energy Drinks</a>
+                            <a href="#"><i class="fa-solid fa-glass-water"></i> Italian Soda</a>
+                            <a href="#"><i class="fa-solid fa-lemon"></i> Fresh Juice</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-btn">Services <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#"><i class="fa-solid fa-truck"></i> Delivery Service</a>
+                            <a href="#"><i class="fa-solid fa-cake-candles"></i> Event Catering</a>
+                            <a href="#"><i class="fa-solid fa-shop"></i> Wholesale Beans</a>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search-group">
+                    <input type="text" placeholder="Search menu..." class="search-input">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+            </div>
+
+            <!-- Mobile controls -->
+            <div class="mobile-controls">
+                <button id="hamburgerBtn" class="hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- BANNER SECTION -->
+        <div class="banner">
+            <img src="logo2/3.png" alt="Tech Banner" onerror="this.src='https://placehold.co/1200x400/1e293b/ffffff?text=BM+COFFEE+ROASTERY'">
+            <div class="banner-overlay">
+                <div class="banner-text">
+                    <h2>BM Coffee</h2>
+                    <p>The Premium Taste in Cambodia</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- POPULAR CATEGORIES / BRANDS -->
+        <div class="section">
+            <div class="section-header">
+                <h3 class="section-title">OUR PREMIUM SELECTION</h3>
+                <a href="#" class="view-all">View all →</a>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-card"><img src="logo2/11.png" alt="Espresso" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Espresso'"><p>Espresso</p></div>
+                <div class="brand-card"><img src="logo2/18.png" alt="Latte" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Latte'"><p>LITAL</p></div>
+                <div class="brand-card"><img src="logo2/23.png" alt="Matcha" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Matcha'"><p>Matcha</p></div>
+                <div class="brand-card"><img src="logo2/20.png" alt="Frappe" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Frappe'"><p>STING</p></div>
+                <div class="brand-card"><img src="logo2/21.png" alt="Juice" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Juice'"><p>COCA</p></div>
+                <div class="brand-card"><img src="logo2/22.png" alt="Tea" onerror="this.src='https://placehold.co/100/1e293b/ffffff?text=Tea'"><p>PROVIDA</p></div>
+            </div>
+        </div>
+
+        <!-- COFFEE SECTION -->
+        <div class="section">
+            <div class="section-header">
+                <h3 class="section-title">🔥 Coffee</h3>
+                <span class="section-badge">Best sellers</span>
+            </div>
+            <hr class="divider">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/5.png" alt="Hot Latte" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Hot+Latte'"></div>
+                    <div class="product-info"><h4>Hot Latte</h4><p class="price">$1.50</p><p class="desc">Smooth espresso with steamed milk</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy noqw</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/10.png" alt="Iced Latte" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Iced+Latte'"></div>
+                    <div class="product-info"><h4>Iced Latte</h4><p class="price">$1.50</p><p class="desc">Refreshing rich espresso over ice</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/7.png" alt="Americano" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Americano'"></div>
+                    <div class="product-info"><h4>Hot Americano</h4><p class="price">$1.00</p><p class="desc">Classic rich black coffee</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/9.png" alt="Matcha Strawberry" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Matcha+Strawberry'"></div>
+                    <div class="product-info"><h4>Matcha Strawberry</h4><p class="price">$1.80</p><p class="desc">Perfect blend of fruit and green tea</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/8.png" alt="Matcha Latte" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Matcha+Latte'"></div>
+                    <div class="product-info"><h4>Matcha Latte</h4><p class="price">$1.70</p><p class="desc">Premium Japanese green tea with milk</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRINK SECTION -->
+        <div class="section">
+            <div class="section-header">
+                <h3 class="section-title">🥤 Refreshing Drinks</h3>
+                <span class="section-badge">Extra Energy</span>
+            </div>
+            <hr class="divider">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/13.png" alt="Sting Red" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Sting+Red'"></div>
+                    <div class="product-info"><h4>Sting Red</h4><p class="price">$1.00</p><p class="desc">Energy booster drink</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/14.png" alt="Sting Yellow" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Sting+Yellow'"></div>
+                    <div class="product-info"><h4>Sting Yellow</h4><p class="price">$1.00</p><p class="desc">Ginseng powered energy</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/15.png" alt="Pro Vida" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Pro+Vida'"></div>
+                    <div class="product-info"><h4>Pro Vida Water</h4><p class="price">$1.00</p><p class="desc">Pure premium drinking water</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy Now</a></div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img"><img src="logo2/16.png" alt="Fruit Soda" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Fruit+Soda'"></div>
+                    <div class="product-info"><h4>Fruit Soda</h4><p class="price">$1.00</p><p class="desc">Sweet and fizzy refreshment</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+                <div class="product-card">
+                     <div class="product-img"><img src="logo2/24.png" alt="Fruit Soda" onerror="this.src='https://placehold.co/200/1e293b/ffffff?text=Fruit+Soda'"></div>
+                      <div class="product-info"><h4>SUGAR</h4><p class="price">$1.00</p><p class="desc">Sweet and fizzy refreshment</p><a href="https://t.me/mengheang32001" target="_blank" class="telegram-btn">buy now</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT & ORDER INFO -->
+        <div class="accessories-card">
+            <div class="accessories-header">
+                <div>
+                    <h4>⚡ Order Now & Contact Us</h4>
+                    <p>Enjoy our premium coffee delivered straight to your door or visit our cozy shop.</p>
+                </div>
+            </div>
+            <div class="accessories-icons">
+                <div><i class="fa-solid fa-phone"></i><span> Tel:</span> 076 272 7288</div>
+                <div><i class="fa-solid fa-paper-plane"></i><span> Telegram: </span><a href="https://t.me/mengheang32001" target="_blank">@mengheang32001</a></div>
+                <div><i class="fa-brands fa-instagram"></i><span> Instagram: </span> @bm_coffee_roastery</div>
+            </div>
+        </div>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-section">
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us on Google Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.619263820234!2d104.89001777537041!3d11.579128488622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109514e073ad479%3A0xf0c7c4f59cf3fc47!2sBM%20Coffee%20Roastery%20%26%20Cafe!5e0!3m2!1sen!2skh!4v1778122661743!5m2!1sen!2skh" width="100%" height="350" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="footer-icon">BM</div>
+                    <span>BM COFFEE CAFE</span>
+                    <span class="copyright">© 2026 BM Coffee Roastery. All Rights Reserved.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="https://t.me/mengheang32001" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram Support</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/share/18ThZoUiv8/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="footer-bottom">All trademarks, logos, and images belong to their respective owners. Crafted with ☕ in Cambodia.</div>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Mobile sidebar functionality
+        const hamburger = document.getElementById('hamburgerBtn');
+        const sidebar = document.getElementById('mobileSidebar');
+        const overlay = document.getElementById('overlayBackdrop');
+        const closeBtn = document.getElementById('closeSidebarBtn');
+
+        function openSidebar() { 
+            sidebar.classList.add('open'); 
+            overlay.classList.add('active'); 
+            document.body.style.overflow = 'hidden'; 
+        }
+        
+        function closeSidebar() { 
+            sidebar.classList.remove('open'); 
+            overlay.classList.remove('active'); 
+            document.body.style.overflow = ''; 
+        }
+        
+        if (hamburger) hamburger.addEventListener('click', openSidebar);
+        if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+        if (overlay) overlay.addEventListener('click', closeSidebar);
+
+        // Mobile dropdown toggles
+        document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const target = document.getElementById(this.dataset.target);
+                const icon = this.querySelector('i');
+                if (target) {
+                    target.classList.toggle('open');
+                    icon.style.transform = target.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Close sidebar on link click
+        document.querySelectorAll('.sidebar-link, .mobile-submenu a').forEach(link => link.addEventListener('click', closeSidebar));
+    </script>
+</body>
+</html>
